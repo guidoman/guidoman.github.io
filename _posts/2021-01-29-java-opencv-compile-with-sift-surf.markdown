@@ -27,7 +27,7 @@ I also show how to build, configure and use the __OpenCV Java wrapper__.
 Note that, if you have a working __Python__ installation, the build process described below will also build the OpenCV Python library. It will be installed into path `lib/python3.x/site-packages/cv2` of the `dist` directory. However, in this post I will not describe how to install and use it.
 
 ## Prerequisites
-To perform all the step of this tutorial, you will need the following:
+To perform all the steps of this tutorial, you will need the following:
 - A C/C++ compiler
 - [cmake](https://cmake.org)
 - The Java JDK
