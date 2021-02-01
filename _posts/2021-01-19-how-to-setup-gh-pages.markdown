@@ -2,7 +2,7 @@
 layout: post
 title:  "How to setup GitHub Pages"
 date:   2021-01-19 17:50:00 +0100
-categories: github tutorial
+categories: howto blogging
 ---
 OK, this is my first post on GitHub Pages.
 

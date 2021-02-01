@@ -2,7 +2,7 @@
 layout: post
 title:  "How to compile OpenCV with SIFT and SURF support, and do feature extraction in Java"
 date:   2021-01-29 18:00:00 +0100
-categories: opencv java
+categories: howto opencv
 ---
 ## Image features introduction
 As [Wikipedia](https://en.wikipedia.org/wiki/Feature_(computer_vision)) states:
