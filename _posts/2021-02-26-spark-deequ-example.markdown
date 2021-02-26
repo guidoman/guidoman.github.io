@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Monitor your ML model in Apache Spark with Deequ"
-date:   2021-02-18 16:00:00 +0100
+date:   2021-02-26 14:00:00 +0100
 categories: howto bigdata
 ---
 Once you have built and trained your ML model, you have to maintain it in production. [This great post](https://eugeneyan.com/writing/practical-guide-to-maintaining-machine-learning/) provides a detailed overview of many options and challenges to do this effectively. 
@@ -16,7 +16,7 @@ In this post I am giving a quick overview of why you should monitor your ML pipe
 Generally speaking, there are three important things to do when monitoring a ML pipeline.
 
 1. __Validate your input data before training your model__ 
-   
+
    You perform basic checks on:
    - Data format: schema, format, etc...
    - Data and features distribution: null values, duplicated values, minimum and maximum, categorical values, etc...
