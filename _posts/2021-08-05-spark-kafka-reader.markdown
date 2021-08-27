@@ -89,7 +89,7 @@ You have now to convert this data into a JSON string and pass it to the Spark re
     }
 }
 {% endhighlight %}
-where, in this example, for topic `myTopic` the offset value for partition 0 is 100, for partition 1 is 200, and so on.
+where, in this example, for topic `myTopic` the offset value for partition 0 is 100, for partition 1 it is 200, and so on.
 
 I choose to put my offsets in a Java array, where the `i`-th element of the array is the offset of partition `i`. The following method will create the required JSON string:
 
@@ -127,7 +127,7 @@ Dataset<Row> readKafkaInput(SparkSession spark, String kafkaServers,
 {% endhighlight %}
 
 ### Save the offset of the last read message
-If you haven't get the `endingOffsets` directly from Kafka and passed them as option to the reader, you must retrieve them from the dataset you've just read:
+If you haven't read the `endingOffsets` directly from Kafka and passed them as option to the reader, you must retrieve them from the dataset you've just read:
 
 {% highlight java %}
 void getMaxOffsets(Dataset<Row> kafkaInput, String topicName) {
@@ -140,7 +140,7 @@ void getMaxOffsets(Dataset<Row> kafkaInput, String topicName) {
         // TODO store maxOffset for topic/partition somewhere
         // ...
     }
-  }
+}
 {% endhighlight %}
 
 ## Final step
